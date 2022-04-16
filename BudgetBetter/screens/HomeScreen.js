@@ -3,9 +3,24 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export function HomeScreen() {
     return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
+    <View style={styles.container}>
+        <Text style={styles.text}>Budget Better</Text>
     </View>
     );
 }
+
+const styles = StyleSheet.create( {
+    container: {
+        flex: 1,
+        backgroundColor: "red",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    text: {
+        fontSize: 60,
+        color: "white",
+        textAlign: "left",
+        textAlignVertical: "bottom",
+    }
+});
 

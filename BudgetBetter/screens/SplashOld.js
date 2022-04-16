@@ -1,15 +1,10 @@
 import React from "react";
 import { View, Text, Image, ScrollView, StyleSheet, Dimensions } from "react-native";
 import { Svg, Path } from "react-native-svg";
-
-import {
-    useFonts,
-} from "@expo-google-fonts/dev";
+import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
 
 export function Splash() {
 
-    let [fontsLoaded] = useFonts({
-    });
 
     return (
         <ScrollView bounces={false} showsVerticalScrollIndicator={false} style={{ height: Dimensions.get("window").height }}>
@@ -27,6 +22,12 @@ export function Splash() {
         </ScrollView>
     )
 }
+
+// async function loadFonts() {
+//     await Font.loadAsync({
+//       'Ionicons': require('./src/assets/fonts/Ionicons.ttf')
+//     });
+// }
 
 const stylesheet = StyleSheet.create({
     _Splash: {
@@ -57,7 +58,7 @@ const stylesheet = StyleSheet.create({
             { translateY: 0 },
             { rotate: "0deg" },
         ],
-        fontFamily: "Montserrat",
+        // fontFamily: "",
         // fontWeight: 400,
         textDecorationLine: "none",
         lineHeight: 67,
