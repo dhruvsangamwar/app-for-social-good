@@ -21,6 +21,9 @@ export function Splash() {
                     </Text>
                 </View>
             </View>
+            <Text>
+                Test
+            </Text>
         </ScrollView>
     )
 }
