@@ -4,6 +4,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { HomeScreen } from './screens/HomeScreen';
+import { Budget } from './screens/Budget';
+import { LocationPermission } from './screens/LocationPermission';
+import { Splash } from './screens/Splash';
+import { SignUp } from './screens/SignUp';
+import { Log } from './screens/Log';
 const Stack = createNativeStackNavigator();
 
 
@@ -13,6 +18,11 @@ function App() {
     <Stack.Navigator>
     {/* <Stack.Screen name="SplashScreen" component={Splash} /> */}
     <Stack.Screen name="HomeScreen" component= { HomeScreen }/>
+    <Stack.Screen name="Budget" component= { Budget }/> 
+    <Stack.Screen name="LocationPermission" component= { LocationPermission }/>
+    <Stack.Screen name="Splash" component= { Splash }/>
+    <Stack.Screen name="SignUp" component= { SignUp }/>
+    <Stack.Screen name="Log" component= { Log }/>
 
     {/* <View style={styles.container}>
       <Text>Open up lololoollooaksdkajnsdl.js to start working on your app!</Text>

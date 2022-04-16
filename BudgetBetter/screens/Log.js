@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export function Splash() {
+export function Log() {
     return (
     <View style={styles.container}>
         <Text style={styles.text}>Budget Better</Text>
@@ -23,3 +23,4 @@ const styles = StyleSheet.create( {
         textAlignVertical: "bottom",
     }
 });
+
