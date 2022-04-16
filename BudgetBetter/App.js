@@ -14,8 +14,9 @@ function App() {
     <NavigationContainer>
     <Stack.Navigator>
     {/* <Stack.Screen name="SplashScreen" component={Splash} /> */}
-    <Stack.Screen name="SplashScreen" component= { Splash }/>
     <Stack.Screen name="HomeScreen" component= { HomeScreen }/>
+
+    <Stack.Screen name="SplashScreen" component= { Splash }/>
     {/* <View style={styles.container}>
       <Text>Open up lololoollooaksdkajnsdl.js to start working on your app!</Text>
       <StatusBar style="auto" />

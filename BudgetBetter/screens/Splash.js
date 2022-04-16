@@ -54,7 +54,7 @@ const stylesheet = StyleSheet.create({
             { translateY: 0 },
             { rotate: "0deg" },
         ],
-        fontFamily: "undefined",
+        fontFamily: "Montserrat",
         // fontWeight: 400,
         textDecorationLine: "none",
         lineHeight: 67,
