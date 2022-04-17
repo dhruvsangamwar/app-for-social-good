@@ -1,10 +1,24 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View, Pressable} from 'react-native';
+import AwersomeButton from "react-native-really-awesome-button";
+
+
+function spendingCategory() {
+    console.log('3');
+}
 
 export function HomeScreen() {
     return (
     <View style={styles.container}>
-        <Text style={styles.text}>Budget Better</Text>
+        <Text style={styles.title}>Home Screen</Text>
+        <Text style={styles.spacing}></Text>
+        <Text style={styles.text}>Select a Category of Spending</Text>
+
+        <View style={styles.buttonContainer}>
+            <AwersomeButton>Food</AwersomeButton>
+            <AwersomeButton>Groceries</AwersomeButton>
+            <AwersomeButton>Books/Supplies</AwersomeButton>
+        </View>
     </View>
     );
 }
@@ -12,15 +26,33 @@ export function HomeScreen() {
 const styles = StyleSheet.create( {
     container: {
         flex: 1,
-        backgroundColor: "red",
-        justifyContent: "center",
-        alignItems: "center"
+        alignItems: 'center',
+        backgroundColor: 'blue'
     },
-    text: {
-        fontSize: 60,
+    title: {
+        fontSize: 50,
         color: "white",
         textAlign: "left",
-        textAlignVertical: "bottom",
+        marginTop: 30,
+        textAlignVertical: "top",
+    },
+    text: {
+        fontSize: 20,
+        color: 'rgb(20, 255, 255)',
+    },
+    spacing: {
+        marginTop: 15,
+        marginBottom: 15,
+    },
+    buttonContainer: {
+        flexDirection: "row",
+        justifyContent: 'space-between'
+    },
+    button: {
+        margin: "5%",
+        color: 'rgb(20, 255, 255)',
+        
     }
+
 });
 
