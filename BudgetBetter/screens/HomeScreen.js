@@ -15,7 +15,7 @@ export function HomeScreen() {
         <Text style={styles.text}>Select a Category of Spending</Text>
 
         <View style={styles.buttonContainer}>
-            <AwersomeButton type="primary" width="100px">Food</AwersomeButton>
+            <AwersomeButton type="primary" width={100} borderRadius={10}>Food</AwersomeButton>
             <AwersomeButton>Groceries</AwersomeButton>
             <AwersomeButton>Books/Supplies</AwersomeButton>
         </View>
