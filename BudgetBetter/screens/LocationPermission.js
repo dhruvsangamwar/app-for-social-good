@@ -19,7 +19,7 @@ export function LocationPermission() {
                     <Button
                         title="Enter a new location"
                         // color="default"
-                        width="50"
+                        // width="50"
                         style={styles.button}
                     />
                 </View>
@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
         // width: '1000px'
         borderRadius: 500,
         overflow: "hidden",
+        width: '200px',
     },
 
     button2Container: {
