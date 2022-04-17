@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, Image, Button } from "react-native";
 
-export function LocationPermission() {
+export function LocationPermission({ navigation }) {
     return (
             <View style={styles.container}>
                 <Image
@@ -28,6 +28,7 @@ export function LocationPermission() {
                         title="Continue"
                         style={styles.continue}
                         color="#3A7CA5"
+                        onPress={() => navigation.navigate('HomeScreen')}
                     />
                 </View>
             </View>
@@ -46,39 +47,39 @@ const styles = StyleSheet.create({
     },
 
     icon: {
-        marginTop: "100px",
+        marginTop: 100,
         width: 70,
         height: 70,
     },
 
     text1: {
         // display: "flex",
-        marginTop: "30px",
+        marginTop: 30,
         textAlign: "center",
-        fontSize: "30px",
-        fontWeight: "700px",
+        fontSize: 30,
+        fontWeight: "700",
     },
 
     text2: {
-        marginTop: "20px",
+        marginTop: 20,
         textAlign: "center",
-        fontSize: "15px",
+        fontSize: 15,
     },
 
     button1Container: {
-        marginTop: "100px",
+        marginTop: 100,
         // color: "black",
         // width: '1000px'
         borderRadius: 500,
         overflow: "hidden",
-        width: '200px',
+        width: 200,
     },
 
     button2Container: {
-        marginTop: "30px",
-        borderRadius: "1000px",
+        marginTop: 30,
+        borderRadius: 1000,
         overflow: "hidden",
         // padding: '10px',
-        width: "400px",
+        width: 400,
     },
 });
