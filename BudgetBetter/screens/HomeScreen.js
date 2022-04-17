@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View, Pressable} from 'react-native';
-import AwersomeButton from "react-native-really-awesome-button";
+import AwersomeButton from "react-native-really-awesome-button/src/themes/rick";
 
 
 function spendingCategory() {
@@ -15,7 +15,7 @@ export function HomeScreen() {
         <Text style={styles.text}>Select a Category of Spending</Text>
 
         <View style={styles.buttonContainer}>
-            <AwersomeButton>Food</AwersomeButton>
+            <AwersomeButton type="primary" width="100px">Food</AwersomeButton>
             <AwersomeButton>Groceries</AwersomeButton>
             <AwersomeButton>Books/Supplies</AwersomeButton>
         </View>
