@@ -93,7 +93,7 @@ export function Budget() {
                 </View>
             </View>
             <Text style={styles.text}>You spend ${global.totalSpent} out of your ${global.maxBudget} budget.</Text>
-            <TestChart/>
+            {/* <TestChart/> */}
         </View>
     );
 }

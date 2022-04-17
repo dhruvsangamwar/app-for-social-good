@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View, Pressable, Image, ImageBackground} from 'react-native';
-import AwersomeButton from "react-native-really-awesome-button/src/themes/rick";
+// import AwersomeButton from "react-native-really-awesome-button/src/themes/rick";
+import AwesomeButton from "react-native-really-awesome-button/src/themes/rick";
 
-export function HomeScreen() {
+
+export function HomeScreen({navigation}) {
     return (
     <ImageBackground 
     style={styles.background}
@@ -12,11 +14,12 @@ export function HomeScreen() {
         <Text style={styles.spacing}></Text>
         <Text style={styles.text}>Select a Category of Spending</Text>
         <View style={styles.buttonContainer}>
-            <AwersomeButton type="primary" width={92} borderRadius={10}>Food</AwersomeButton>
-            <AwersomeButton type="primary" width={92} borderRadius={10}>Groceries</AwersomeButton>
-            <AwersomeButton type="primary" width={92} borderRadius={10}>Books/Supplies</AwersomeButton>
-            <AwersomeButton type="primary" width={92} borderRadius={10}><Image source={require("../assets/more_horizontal.png")} /></AwersomeButton>
+            <AwesomeButton type="primary" width={92} borderRadius={10}>Food</AwesomeButton>
+            <AwesomeButton type="primary" width={92} borderRadius={10}>Groceries</AwesomeButton>
+            <AwesomeButton type="primary" width={92} borderRadius={10}>Books/Supplies</AwesomeButton>
+            <AwesomeButton type="primary" width={92} borderRadius={10}><Image source={require("../assets/more_horizontal.png")} /></AwesomeButton>
         </View>
+        <AwesomeButton type="secondary" stretch  onPress={() => navigation.navigate('Budget')}>Budget</AwesomeButton>
     </View>
     </ImageBackground>
     );
