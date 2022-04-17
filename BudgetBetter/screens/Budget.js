@@ -1,15 +1,19 @@
 import React from 'react';
 import '../global.js';
 import { StyleSheet, Text, View } from 'react-native';
-
+import TestChart from'../pie';
 import { useState } from 'react';
+// import PieChart from 'react-native-pie-chart';
+// import Pie from 'react-native-pie'
 
-import { TouchableOpacity } from 'react-native';
-import { CedarvilleCursive_400Regular } from '@expo-google-fonts/dev';
+// import { TouchableOpacity } from 'react-native';
+// import { CedarvilleCursive_400Regular } from '@expo-google-fonts/dev';
+
 
 
 let percent = 0;
 let percentString = '';
+let data =  [10, 13, 8, 19, 17];
 function calcPercent() {
     percent = global.totalSpent / global.maxBudget;
     percentString = percent * 100 + '%';
@@ -59,6 +63,7 @@ const PercentageBar = ({
                         bottom: 10
                     }}>
                     <Text style={{ textAlign: 'right' }}>{getPercentage}</Text>
+                    
                 </View>
             </View>
         </View>
@@ -88,6 +93,7 @@ export function Budget() {
                 </View>
             </View>
             <Text style={styles.text}>You spend ${global.totalSpent} out of your ${global.maxBudget} budget.</Text>
+            <TestChart/>
         </View>
     );
 }
@@ -111,7 +117,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 25,
-        textAlign: 'center'
+        textAlign: 'center',
     },
 });
 
