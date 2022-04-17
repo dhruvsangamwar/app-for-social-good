@@ -18,10 +18,11 @@ function App() {
     <NavigationContainer>
     <Stack.Navigator>
     {/* <Stack.Screen name="SplashScreen" component={Splash} /> */}
+    <Stack.Screen name="Budget" component= { Budget }/>
     <Stack.Screen name="LocationPermission" component= { LocationPermission }/>
     <Stack.Screen name="HomeScreen" component= { HomeScreen }/>
     <Stack.Screen name="Warning" component= { Log }/>
-    <Stack.Screen name="Budget" component= { Budget }/> 
+     
     <Stack.Screen name="Splash" component= { Splash }/>
     <Stack.Screen name="SignUp" component= { SignUp }/>
     <Stack.Screen name="Log" component= { Log }/>
