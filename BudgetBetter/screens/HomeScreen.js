@@ -8,6 +8,7 @@ import AwesomeButton from "react-native-really-awesome-button/src/themes/rick";
 export function HomeScreen({ navigation }) {
     const [number, onChangeNumber] = React.useState(null);
     let tempNum = 0;
+    let name = global.name;
     function setCategory(cat) {
         tempNum = parseInt(tempNum);
         global.totalSpent = parseInt(global.totalSpent);
@@ -29,7 +30,7 @@ export function HomeScreen({ navigation }) {
             style={styles.background}
             source={require("../assets/homepage.jpeg")}>
             <View style={styles.container}>
-                <Text style={styles.title}>Hello User!</Text>
+                <Text style={styles.title}>Hello {global.name}!</Text>
                 <Text style={styles.spacing}></Text>
                 <Text style={styles.text}>Select a Category of Spending</Text>
                 <View style={styles.buttonContainer}>
