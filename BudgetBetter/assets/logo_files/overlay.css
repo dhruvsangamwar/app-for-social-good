@@ -1,0 +1,33 @@
+
+#id_overlaySvg, #id_whiteOverlay
+{
+    height: 204px;
+    left: 22px;
+    position: absolute;
+    top: 22px;
+    width: 204px;
+    display: none;
+}
+
+#id_ex
+{
+    left: 174px;
+    position: absolute;
+    top: 193px;
+	z-index=-1;
+}
+
+#id_overlayContainer
+{
+	z-index=50;
+}
+
+.wrong
+{
+ border:1px solid red;
+}
+
+#id_backbutton:hover
+{
+	background-color:#0B0000;color:#fff;
+}
