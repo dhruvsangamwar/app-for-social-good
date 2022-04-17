@@ -16,8 +16,8 @@ export function HomeScreen() {
 
         <View style={styles.buttonContainer}>
             <AwersomeButton type="primary" width={100} borderRadius={10}>Food</AwersomeButton>
-            <AwersomeButton>Groceries</AwersomeButton>
-            <AwersomeButton>Books/Supplies</AwersomeButton>
+            <AwersomeButton type="primary" width={100} borderRadius={10}>Groceries</AwersomeButton>
+            <AwersomeButton type="primary" width={100} borderRadius={10}>Books/Supplies</AwersomeButton>
         </View>
     </View>
     );
