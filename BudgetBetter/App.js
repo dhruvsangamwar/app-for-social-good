@@ -9,6 +9,7 @@ import { LocationPermission } from './screens/LocationPermission';
 import { Splash } from './screens/Splash';
 import { SignUp } from './screens/SignUp';
 import { Log } from './screens/Log';
+import { Warning } from './screens/Warning';
 const Stack = createNativeStackNavigator();
 
 
@@ -19,6 +20,7 @@ function App() {
     {/* <Stack.Screen name="SplashScreen" component={Splash} /> */}
     <Stack.Screen name="LocationPermission" component= { LocationPermission }/>
     <Stack.Screen name="HomeScreen" component= { HomeScreen }/>
+    <Stack.Screen name="Warning" component= { Log }/>
     <Stack.Screen name="Budget" component= { Budget }/> 
     <Stack.Screen name="Splash" component= { Splash }/>
     <Stack.Screen name="SignUp" component= { SignUp }/>
